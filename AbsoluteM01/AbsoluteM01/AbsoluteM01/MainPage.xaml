@@ -4,13 +4,23 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="AbsoluteM01.MainPage">
+             x:Class="AbsoluteM01.MainPage"
+             Title="Absolute">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <AbsoluteLayout>
+        <Image Source="jureg.jpg"
+               AbsoluteLayout.LayoutBounds="0.5,40,250,200"
+		AbsoluteLayout.LayoutFlags="XProportional"/>
+
+        <BoxView BackgroundColor="Blue" CornerRadius="50"
+		AbsoluteLayout.LayoutBounds="50,300,100,100"
+		AbsoluteLayout.LayoutFlags="None"/>
+        <BoxView BackgroundColor="Red"
+		AbsoluteLayout.LayoutBounds="250,300,100,100"
+		AbsoluteLayout.LayoutFlags="None"/>
+        <Button Text="Enviar" BackgroundColor="Beige"
+		AbsoluteLayout.LayoutBounds="50,600,300,100"
+		AbsoluteLayout.LayoutFlags="None"/>
+    </AbsoluteLayout>
 
 </ContentPage>
