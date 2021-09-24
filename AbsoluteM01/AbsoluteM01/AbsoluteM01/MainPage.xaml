@@ -5,16 +5,18 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="AbsoluteM01.MainPage"
-             Title="Absolute">
+             Title="Absolute"
+             xmlns:imgc ="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin">
 
     <AbsoluteLayout>
         <Image Source="jureg.jpg"
                AbsoluteLayout.LayoutBounds="0.5,40,250,200"
 		AbsoluteLayout.LayoutFlags="XProportional"/>
 
-        <BoxView BackgroundColor="Blue" CornerRadius="50"
-		AbsoluteLayout.LayoutBounds="50,300,100,100"
+        <imgc:CircleImage Source="jureg.jpg"
+		AbsoluteLayout.LayoutBounds="0.2,270,300, 150"
 		AbsoluteLayout.LayoutFlags="None"/>
+
         <BoxView BackgroundColor="Red"
 		AbsoluteLayout.LayoutBounds="250,300,100,100"
 		AbsoluteLayout.LayoutFlags="None"/>
